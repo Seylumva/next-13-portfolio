@@ -1,8 +1,9 @@
 import "@/styles/globals.css";
 import styles from "@/styles/Header.module.css";
-import { Inter } from "next/font/google";
+import { Inter, Jost } from "next/font/google";
 import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
+const jost = Jost({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Emilio Noa",
@@ -19,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <header className={`${styles.header} ${styles.container}`}>
-          <span>
+          <span className={jost.className}>
             <Link href="/">Emilio Noa</Link>
           </span>
           <ul>
