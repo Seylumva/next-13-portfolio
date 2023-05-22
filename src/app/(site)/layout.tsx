@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Emilio Noa",
   description:
-    "Emilio Noa is a web developer based in New York City. He specializes in front end development with frameworks and libraries such as React.js and Next.js",
+    "Results-driven web developer with a passion for creating seamless user experiences and innovative digital solutions. Specializing in front-end development, with a focus on React, I have a proven ability to quickly adapt to new technologies and thrive in fast-paced environments.",
 };
 
 export default function RootLayout({

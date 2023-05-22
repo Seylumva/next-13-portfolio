@@ -1,4 +1,9 @@
 import styles from "@/styles/Section.module.css";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact | Emilio Noa",
+};
 
 export default function Contact() {
   return (

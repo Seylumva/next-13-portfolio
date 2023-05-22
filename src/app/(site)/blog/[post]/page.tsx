@@ -3,10 +3,19 @@ import styles from "@/styles/Section.module.css";
 import blogStyles from "@/styles/BlogPostPage.module.css";
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";
+import { Metadata } from "next";
 
 type Props = {
   params: { post: string };
 };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const post = await getPost(params.post);
+  return {
+    title: post.title,
+    description: post.blurb,
+  };
+}
 
 export default async function Post({ params }: Props) {
   const slug = params.post;

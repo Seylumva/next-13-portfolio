@@ -16,6 +16,7 @@ export async function getPost(slug: string): Promise<Post> {
       body,
       categories,
       "mainImage": mainImage.asset->url
+      blurb
     }`,
     { slug }
   );
