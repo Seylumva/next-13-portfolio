@@ -1,0 +1,35 @@
+/* Header */
+.header {
+  margin-block: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header > span a {
+  font-size: var(--fs-md);
+  text-decoration: none;
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.header > ul {
+  display: flex;
+  gap: 1.8rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header > ul a {
+  text-decoration: none;
+  color: #fff;
+  font-size: var(--fs-base);
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}

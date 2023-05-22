@@ -1,0 +1,36 @@
+.card {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.card h3 {
+  margin-bottom: 0.6rem;
+}
+
+.card .blurb {
+  margin-bottom: 0.8rem;
+}
+
+span:not(.blurb) {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.35em;
+}
+
+.card:hover h3 {
+  color: var(--color-primary);
+}
+
+.card p {
+  font-weight: 200;
+}
+.card path {
+  stroke: transparent;
+}
+
+.card:hover path {
+  stroke: var(--color-primary);
+}

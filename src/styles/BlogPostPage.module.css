@@ -1,0 +1,24 @@
+.main-image {
+  margin-bottom: 1rem;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-block: 2rem;
+
+  background: #101010;
+  border-radius: 8px;
+  padding: 0.6rem 0.8rem;
+}
+
+.author img {
+  border-radius: 50%;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

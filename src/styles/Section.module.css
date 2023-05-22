@@ -1,0 +1,57 @@
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Section */
+
+.section h2 {
+  font-size: var(--fs-lg);
+  margin-bottom: 0.35em;
+}
+
+.section h3 {
+  font-size: var(--fs-md);
+}
+
+.section p,
+.section li {
+  font-size: var(--fs-base);
+  font-weight: 300;
+}
+
+.section ul {
+  margin-top: 1.5em;
+}
+
+.section ul li + li {
+  margin-top: 0.75em;
+}
+
+.external-link {
+  text-underline-position: under;
+  color: #3a83f5;
+  text-decoration: underline;
+  transition: ease 150ms all;
+}
+
+.external-link:hover {
+  color: #65a0ff;
+  text-decoration: none;
+}
+
+section > .recent-posts {
+  background: linear-gradient(to right, #f2709c, #ff9472);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+section > .recent-posts::selection {
+  -webkit-text-fill-color: #000;
+}

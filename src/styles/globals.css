@@ -1,0 +1,96 @@
+:root {
+  --fs-sm: clamp(0.8rem, 0.14vw + 0.77rem, 0.94rem);
+  --fs-base: clamp(1rem, 0.26vw + 0.94rem, 1.25rem);
+  --fs-md: clamp(1.25rem, 0.43vw + 1.15rem, 1.67rem);
+  --fs-lg: clamp(1.56rem, 0.68vw + 1.41rem, 2.22rem);
+  --fs-xl: clamp(1.95rem, 1.03vw + 1.72rem, 2.96rem);
+  --fs-xxl: clamp(2.44rem, 1.54vw + 2.09rem, 3.95rem);
+  --fs-xxxl: clamp(3.05rem, 2.27vw + 2.54rem, 5.26rem);
+  --fs-xxxxl: clamp(3.81rem, 3.28vw + 3.08rem, 7.01rem);
+  --color-primary: hsl(230deg, 100%, 69%);
+}
+
+::selection {
+  background: #fff;
+  color: #000;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.7;
+  background: #000;
+  color: #fff;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

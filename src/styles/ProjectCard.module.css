@@ -1,0 +1,54 @@
+/* Projects */
+.project {
+  padding: 2em;
+  border: 1px solid #3f3f3f;
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.project:hover {
+  transition: background 150ms ease;
+  background: #101010;
+}
+
+.project p {
+  margin-block: 0.75em;
+}
+
+.project > span {
+  display: flex;
+  align-items: center;
+  gap: 0.35em;
+
+  font-size: var(--fs-base);
+  background: linear-gradient(to right, #f2709c, #ff9472);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 1px solid transparent;
+  text-decoration: none;
+}
+
+.project > span path {
+  stroke: #ff9472;
+}
+
+.project > span::selection {
+  -webkit-text-fill-color: #000;
+}
+
+.project-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-name > span {
+  font-weight: 100;
+}
+
+@media screen and (min-width: 1024px) {
+  .project {
+    padding: 3em;
+  }
+}
