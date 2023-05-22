@@ -1,5 +1,12 @@
 export const projects = [
   {
+    name: "Personal Blog & Portfolio",
+    description:
+      "The very site you're on! Built with Sanity.io and Next.js 13 and deployed to Vercel.",
+    year: 2023,
+    link: "https://github.com/Seylumva/next-13-portfolio",
+  },
+  {
     name: "Link Shrub",
     description:
       "An alternative to Linktree for creators looking for elegance and simplicity",
