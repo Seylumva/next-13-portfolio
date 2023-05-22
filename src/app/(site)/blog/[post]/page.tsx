@@ -22,13 +22,14 @@ export default async function Post({ params }: Props) {
   const post = await getPost(slug);
   return (
     <section className={`${styles.container} ${styles.section}`}>
-      <Image
-        className={`${blogStyles["main-image"]}`}
-        src={`${post.mainImage}?w=800&h=350&fit=crop`}
-        alt={post.title}
-        width={800}
-        height={350}
-      />
+      <div className={`${blogStyles["image-wrapper"]}`}>
+        <Image
+          fill
+          className={`${blogStyles.image}`}
+          src={`${post.mainImage}?auto=format&w=1100&h=600&fit=crop`}
+          alt={post.title}
+        />
+      </div>
       <h2>{post.title}</h2>
       <PortableText value={post.body} />
 

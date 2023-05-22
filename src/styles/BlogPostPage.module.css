@@ -22,3 +22,20 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .image-wrapper {
+    height: 600px;
+  }
+}
+
+.image {
+  object-fit: contain;
+}
