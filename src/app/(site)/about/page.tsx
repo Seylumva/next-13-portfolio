@@ -27,7 +27,7 @@ export default function About() {
         </li>
         <li>
           <b>Continued to keep up with recent trends</b> such as AI by
-          experimenting with OpenAI's APIs
+          experimenting with OpenAI&apos;s APIs
         </li>
         <li>
           <b>Started writing articles based on my projects</b> to demonstrate my
