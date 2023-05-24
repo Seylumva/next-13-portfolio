@@ -21,10 +21,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 const serializers = {
   marks: {
     internalLink: ({ children, value }: any) => (
-      <InternalLinkRenderer children={children} value={value} />
+      <InternalLinkRenderer value={value}>{children}</InternalLinkRenderer>
     ),
     link: ({ children, value }: any) => (
-      <ExternalLinkRenderer children={children} value={value} />
+      <ExternalLinkRenderer value={value}>{children}</ExternalLinkRenderer>
     ),
   },
 };
