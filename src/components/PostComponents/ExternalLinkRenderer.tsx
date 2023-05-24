@@ -1,4 +1,5 @@
 import styles from "./ExternalLinkRenderer.module.css";
+import { BiLinkExternal } from "react-icons/bi";
 
 const ExternalLinkRenderer = ({ children, value }: any) => {
   return (
@@ -9,6 +10,7 @@ const ExternalLinkRenderer = ({ children, value }: any) => {
       target="_blank"
     >
       {children}
+      <BiLinkExternal />
     </a>
   );
 };
