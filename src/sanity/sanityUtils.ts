@@ -4,7 +4,7 @@ import clientConfig from "./config/client-config";
 
 export async function getPost(slug: string): Promise<Post> {
   return createClient(clientConfig).fetch(
-    groq`*[_type == "post" && slug.current == $slug][0]{
+    groq`*[slug.current == $slug][0]{
       _id,
       title,
       publishedAt,
@@ -12,11 +12,19 @@ export async function getPost(slug: string): Promise<Post> {
         name,
         "image": image.asset -> url
       },
-      "slug": slug.current,
-      body,
       categories,
       "mainImage": mainImage.asset->url,
-      blurb
+      body[]{
+        ...,
+        markDefs[]{
+          ...,
+          _type == "internalLink" => {
+            ...,
+            "slug": @.post->slug,
+            "url": "https://www.emilionoa.com/blog/" + @.post->slug.current
+          }
+        }
+      }
     }`,
     { slug }
   );

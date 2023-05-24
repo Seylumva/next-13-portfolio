@@ -1,0 +1,14 @@
+.link {
+  background: linear-gradient(to right, #f2709c, #ff9472);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: underline;
+  font-weight: 500;
+  border-bottom: 1px solid #ff9472;
+}
+
+.link:hover {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}

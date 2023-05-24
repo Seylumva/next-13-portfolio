@@ -4,7 +4,8 @@ import blogStyles from "@/styles/BlogPostPage.module.css";
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";
 import { Metadata } from "next";
-
+import ExternalLinkRenderer from "@/components/PostComponents/ExternalLinkRenderer";
+import InternalLinkRenderer from "@/components/PostComponents/InternalLinkRenderer";
 type Props = {
   params: { post: string };
 };
@@ -16,6 +17,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: post.blurb,
   };
 }
+
+const serializers = {
+  marks: {
+    internalLink: ({ children, value }: any) => (
+      <InternalLinkRenderer children={children} value={value} />
+    ),
+    link: ({ children, value }: any) => (
+      <ExternalLinkRenderer children={children} value={value} />
+    ),
+  },
+};
 
 export default async function Post({ params }: Props) {
   const slug = params.post;
@@ -31,7 +43,7 @@ export default async function Post({ params }: Props) {
         />
       </div>
       <h2>{post.title}</h2>
-      <PortableText value={post.body} />
+      <PortableText value={post.body} components={serializers} />
 
       <div className={blogStyles.footer}>
         <p>Last updated: {post.publishedAt}</p>
