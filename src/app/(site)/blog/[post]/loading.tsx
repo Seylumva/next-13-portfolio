@@ -24,8 +24,7 @@ export default function Loading(props: any) {
         <rect x="0" y="880" rx="5" ry="5" width="95%" height="20" />
         <rect x="0" y="910" rx="5" ry="5" width="94%" height="20" />
         <rect x="0" y="940" rx="5" ry="5" width="96%" height="20" />
-        <rect x="0" y="970" rx="5" ry="5" width="93%" height="20" />
-        <rect x="0" y="1000" rx="5" ry="5" width="85%" height="20" />
+        <rect x="0" y="970" rx="5" ry="5" width="85%" height="20" />
         Test
       </ContentLoader>
     </section>
