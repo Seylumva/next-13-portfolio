@@ -11,6 +11,6 @@
 
 .link:hover {
   cursor: pointer;
-  color: #65a0ff;
+  color: rgb(101, 160, 255);
   border-bottom: 1px solid transparent;
 }

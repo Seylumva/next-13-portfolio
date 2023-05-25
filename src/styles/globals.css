@@ -7,7 +7,7 @@
   --fs-xxl: clamp(2.44rem, 1.54vw + 2.09rem, 3.95rem);
   --fs-xxxl: clamp(3.05rem, 2.27vw + 2.54rem, 5.26rem);
   --fs-xxxxl: clamp(3.81rem, 3.28vw + 3.08rem, 7.01rem);
-  --color-primary: hsl(230deg, 100%, 69%);
+  --color-primary: #617bff;
 }
 
 ::selection {
