@@ -32,7 +32,7 @@ export async function getPost(slug: string): Promise<Post> {
 
 export async function getPosts(): Promise<Post[]> {
   return createClient(clientConfig).fetch(
-    groq`*[_type == "post"]{
+    groq`*[_type == "post"]|order(publishedAt desc){
       _id,
       title,
       "slug": slug.current,
