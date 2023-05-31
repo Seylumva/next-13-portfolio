@@ -1,5 +1,12 @@
 export const projects = [
   {
+    name: "Instagram Clone",
+    description:
+      "A clone of Instagram, the photo and video social network. Currently a work in progress",
+    year: 2023,
+    link: "https://instagram-clone-seylumva.vercel.app/",
+  },
+  {
     name: "Personal Blog & Portfolio",
     description:
       "The very site you're on! Built with Sanity.io and Next.js 13 and deployed to Vercel.",
