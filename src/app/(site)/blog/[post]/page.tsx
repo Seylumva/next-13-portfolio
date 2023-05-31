@@ -60,3 +60,5 @@ export default async function Post({ params }: Props) {
     </section>
   );
 }
+
+export const revalidate = 60;
