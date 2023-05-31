@@ -4,7 +4,7 @@ export const projects = [
     description:
       "A clone of Instagram, the photo and video social network. Currently a work in progress",
     year: 2023,
-    link: "https://instagram-clone-seylumva.vercel.app/",
+    link: "https://github.com/Seylumva/instagram-clone",
   },
   {
     name: "Personal Blog & Portfolio",
